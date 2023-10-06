@@ -1,5 +1,5 @@
 
-import { StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/pages/Home';
@@ -21,18 +21,18 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
-        <Stack.Screen name="Chose" component={Chose} />     
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+            <Stack.Screen name="Chose" component={Chose} />
+          </Stack.Navigator>
+        </NavigationContainer>
+        );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+        const styles = StyleSheet.create({
+          container: {
+          flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
   },
 });
 

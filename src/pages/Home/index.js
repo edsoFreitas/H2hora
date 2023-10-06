@@ -27,8 +27,8 @@ export default function Home({ navigation }) {
           />
         </View>
         <View style={{ width: 300 }}>
-        <TouchableOpacity onPress={Registercreen} 
-        style={{ backgroundColor: '#1E2F44', paddingVertical: 12, alignItems: 'center', borderRadius: 10 }}>
+        <TouchableOpacity style={{ backgroundColor: '#1E2F44', paddingVertical: 12, alignItems: 'center', borderRadius: 10 }}
+        onPress={Registercreen}>
             <Text style={{ color: '#ffffff', fontSize: 36}}>NOVA CONTA</Text>
           </TouchableOpacity>
         </View>
