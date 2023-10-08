@@ -9,7 +9,7 @@ export default function Chose() {
     <View style={styles.container}>
 
       <ImageBackground
-      source={require('../../../imagens/fundo2.jpg')}
+      source={require('../../imagens/fundo2.jpg')}
       style={styles.ImageBackground}>
 
       <View style={{marginTop: 28, marginBottom: 200}}>

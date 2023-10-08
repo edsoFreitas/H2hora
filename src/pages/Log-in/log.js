@@ -17,7 +17,7 @@ export default function Open({navigation}) {
     <View style={styles.container}>
       <View style={{ marginBottom: 60 }}>
         <Image
-          source={require('../../../imagens/logo.png')}
+          source={require('../../imagens/logo.png')}
           style={{ width: 280, height: 130, borderRadius: 100, borderColor: 'white', borderWidth: 10 }}
         />
       </View>

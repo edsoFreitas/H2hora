@@ -15,14 +15,14 @@ export default function Home({ navigation }) {
 
     return (
     <ImageBackground
-      source={require('../../../imagens/woman.webp')}
+      source={require('../../imagens/woman.webp')}
       style={styles.backgroundImage}
     >
 
       <View style={styles.container}>
         <View style={{ marginBottom: 110, marginTop: 60 }}>
           <Image
-            source={require('../../../imagens/logo.png')}
+            source={require('../../imagens/logo.png')}
             style={{ width: 280, height: 130, borderRadius: 100, borderColor: 'white', borderWidth: 10 }}
           />
         </View>
