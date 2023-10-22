@@ -22,7 +22,7 @@ export default function Sign({ navigation }) {
     <View style={styles.container}>
       <View style={{ marginBottom: 80, marginTop: 40, flexDirection: 'row', display: 'flex', width: '100%', alignItems: 'center' }}>
 
-        <TouchableOpacity onPress={homeScreen}>
+        <TouchableOpacity onPress={() =>homeScreen(navigation)}>
           <AntDesign name="left" size={32} color="white" style={{ marginLeft: 20 }} />
         </TouchableOpacity>
         
@@ -39,14 +39,14 @@ export default function Sign({ navigation }) {
         <TextInput style={styles.caixa} placeholder="CONFIRMAR SENHA" placeholderTextColor="#ccc" />
       </View>
       <View style={{ marginTop: 40 }}>
-        <TouchableOpacity onPress={ChoseScreen}
+        <TouchableOpacity onPress={() =>ChoseScreen(navigation)}
           style={styles.button}>
           <Text style={{ color: '#ffffff', fontSize: 24 }}>CRIAR CONTA</Text>
         </TouchableOpacity>
       </View>
       <View style={{ display: 'flex', flexDirection: 'row', marginTop: 50 }}>
         <Text style={{ color: '#ffffff', fontSize: 20 }}>Já Possui uma conta?</Text>
-        <TouchableOpacity onPress={LoginScreen}>
+        <TouchableOpacity onPress={() =>LoginScreen(navigation)}>
           <Text style={{ color: '#ffffff', fontSize: 20, textDecorationLine: 'underline' }}> Fazer login</Text>
         </TouchableOpacity>
       </View>

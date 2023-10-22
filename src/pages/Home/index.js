@@ -2,16 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View, Image, ImageBackground } from 'react-native';
 import React from 'react';
 import styles from './styles.js'
+import { RegisterScreen, LoginScreen} from '../../functions/func.js';
 
 export default function Home({ navigation }) {
-
-    function Registercreen(){
-        navigation.navigate('Register');
-      }
-    
-    function LoginScreen(){
-        navigation.navigate('Login');
-      }
 
     return (
     <ImageBackground
@@ -28,12 +21,12 @@ export default function Home({ navigation }) {
         </View>
         <View style={{ width: 300 }}>
         <TouchableOpacity style={{ backgroundColor: '#1E2F44', paddingVertical: 12, alignItems: 'center', borderRadius: 10 }}
-        onPress={Registercreen}>
+        onPress={() =>RegisterScreen(navigation)}>
             <Text style={{ color: '#ffffff', fontSize: 36}}>NOVA CONTA</Text>
           </TouchableOpacity>
         </View>
         <View style={{ width: 300, marginTop: 25}}>
-          <TouchableOpacity onPress={LoginScreen} style={{ backgroundColor: '#1E2F44', paddingVertical: 12, alignItems: 'center', borderRadius: 10 }}>
+          <TouchableOpacity onPress={() =>LoginScreen(navigation)} style={{ backgroundColor: '#1E2F44', paddingVertical: 12, alignItems: 'center', borderRadius: 10 }}>
             <Text style={{ color: '#ffffff', fontSize: 36}}>ENTRAR</Text>
           </TouchableOpacity>
         </View>

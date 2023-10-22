@@ -3,15 +3,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, Image, View, TextInput, TouchableOpacity } from 'react-native';
 import styles from './logStyles.js';
+import { RegisterScreen, LoginScreen, ChoseScreen, homeScreen } from '../../functions/func.js';
  
 export default function Open({navigation}) {
-
-  function ChoseScreen(){
-    navigation.navigate('Chose');
-  }
-  function Registercreen(){
-    navigation.navigate('Register');
-  }
 
   return (
     <View style={styles.container}>
@@ -34,13 +28,13 @@ export default function Open({navigation}) {
         </TouchableOpacity>
       </View>
       <View>
-        <TouchableOpacity onPress={ChoseScreen}
+        <TouchableOpacity onPress={() =>ChoseScreen(navigation)}
         style={styles.button}>
           <Text style={{ color: '#ffffff', fontSize: 24}}>ENTRAR</Text>
         </TouchableOpacity>
       </View>
       <View>
-        <TouchableOpacity style={{ marginTop: 50 }} onPress={Registercreen}>
+        <TouchableOpacity style={{ marginTop: 50 }} onPress={() =>RegisterScreen(navigation)}>
           <Text style={{ color: '#ffffff', fontSize: 20, textDecorationLine: 'underline'}}>Não possui cadastro?</Text>
         </TouchableOpacity>
       </View>
