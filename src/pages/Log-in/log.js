@@ -3,7 +3,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, Image, View, TextInput, TouchableOpacity } from 'react-native';
 import styles from './logStyles.js';
-import { RegisterScreen, LoginScreen, ChoseScreen, homeScreen } from '../../functions/func.js';
+import { RegisterScreen, ChoseScreen} from '../../functions/func.js';
  
 export default function Open({navigation}) {
 

@@ -4,19 +4,9 @@ import { StatusBar } from 'expo-status-bar';;
 import { Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 import styles from './registerStyles';
 import { AntDesign } from "@expo/vector-icons";
+import { LoginScreen, ChoseScreen, homeScreen } from '../../functions/func.js';
 
 export default function Sign({ navigation }) {
-
-  function LoginScreen() {
-    navigation.navigate('Login');
-  }
-  function ChoseScreen() {
-    navigation.navigate('Chose');
-  }
-
-  function homeScreen() {
-    navigation.navigate('Home');
-  }
 
   return (
     <View style={styles.container}>
